@@ -1,5 +1,5 @@
 # tax-distributions
-R Shiny app code to examine different tax burden distributions across income deciles.
+R Shiny app code that allows the user to examine different tax burden distributions across income deciles.
 
 The app can be generated locally by using the script on your desktop or the app can be found here:
 
