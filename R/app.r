@@ -6,27 +6,27 @@ library(readxl)
 # Load Data
     
     # TY2015 dataset
-      dat2015 <- readxl::read_xlsx("Distribution-of-tax-burden-2015.xlsx", sheet = "percent distribution step")
+      dat2015 <- readxl::read_xlsx("data/Distribution-of-tax-burden-2015.xlsx", sheet = "percent distribution step")
       names(dat2015) <- c("Adjusted Tax Unit Income Decile", "Number of Tax Units", "Number of Individuals", "Tax Unit Income", "Total Federal Taxes",
                             "Individual Income Taxes", "Corporate Income Taxes", "Payroll Taxes", "Excise and Customs Duties", "Estate and Gift Taxes")
         
     # TY2016 dataset
-        dat2016 <- readxl::read_xlsx("Distribution-of-tax-burden-2016.xlsx", sheet = "percent distribution step")
+        dat2016 <- readxl::read_xlsx("data/Distribution-of-tax-burden-2016.xlsx", sheet = "percent distribution step")
         names(dat2016) <- c("Adjusted Tax Unit Income Decile", "Number of Tax Units", "Number of Individuals", "Tax Unit Income", "Total Federal Taxes",
                             "Individual Income Taxes", "Corporate Income Taxes", "Payroll Taxes", "Excise and Customs Duties", "Estate and Gift Taxes")
         
     # TY2017 dataset
-        dat2017 <- readxl::read_xlsx("Distribution-of-tax-burden-2017.xlsx", sheet = "percent distribution step")
+        dat2017 <- readxl::read_xlsx("data/Distribution-of-tax-burden-2017.xlsx", sheet = "percent distribution step")
         names(dat2017) <- c("Adjusted Tax Unit Income Decile", "Number of Tax Units", "Number of Individuals", "Tax Unit Income", "Total Federal Taxes",
                             "Individual Income Taxes", "Corporate Income Taxes", "Payroll Taxes", "Excise and Customs Duties", "Estate and Gift Taxes")
         
     # TY2018 dataset
-        dat2018 <- readxl::read_xlsx("Distribution-of-tax-burden-2018.xlsx", sheet = "percent distribution step")
+        dat2018 <- readxl::read_xlsx("data/Distribution-of-tax-burden-2018.xlsx", sheet = "percent distribution step")
         names(dat2018) <- c("Adjusted Tax Unit Income Decile", "Number of Tax Units", "Number of Individuals", "Tax Unit Income", "Total Federal Taxes",
                             "Individual Income Taxes", "Corporate Income Taxes", "Payroll Taxes", "Excise and Customs Duties", "Estate and Gift Taxes")
         
     # TY2019 dataset
-        dat2019 <- readxl::read_xlsx("Distribution-of-tax-burden-2019.xlsx", sheet = "percent distribution step")
+        dat2019 <- readxl::read_xlsx("data/Distribution-of-tax-burden-2019.xlsx", sheet = "percent distribution step")
         names(dat2019) <- c("Adjusted Tax Unit Income Decile", "Number of Tax Units", "Number of Individuals", "Tax Unit Income", "Total Federal Taxes",
                             "Individual Income Taxes", "Corporate Income Taxes", "Payroll Taxes", "Excise and Customs Duties", "Estate and Gift Taxes")
 
