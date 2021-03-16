@@ -180,9 +180,12 @@ server <- function(input, output) {
             scale_colour_manual(name = "Legend", values=c(setNames(c("#2171b5", "#cb181d"), c(y1_plot1_name(), y2_plot1_name())))) +
             coord_cartesian(xlim = c(0, 100), ylim = c(-5, 100), expand = FALSE) + 
             labs(title = "\n\nDistribution by Tax Unit Decile", subtitle = paste0("TY", year_plot1()), caption = "\n\n\nData: U.S. Department of the Treasury, Office of Tax Analysis - Distributional Analysis of the U.S. Tax System\nhttps://home.treasury.gov/policy-issues/tax-policy/office-of-tax-analysis") +
-            scale_x_continuous(name = "Tax Unit Deciles", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("", "10th", "20th", "30th", "40th", "50th", "60th",
-                                                                                                                             "70th", "80th", "90th", "100th")) +
-            scale_y_continuous(name = "Percent Share", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%")) + 
+            scale_x_continuous(name = "Tax Unit Deciles", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("", "10th", "20th", "30th", 
+                                                                                                                             "40th", "50th", "60th", "70th", 
+                                                                                                                             "80th", "90th", "100th")) +
+            scale_y_continuous(name = "Percent Share", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("0%", "10%", "20%", "30%", "40%", 
+                                                                                                                          "50%", "60%", "70%", "80%", "90%", 
+                                                                                                                          "100%")) + 
             theme(
               panel.background = element_rect(fill = "white"),
               panel.border = element_rect(fill = NA, color = "black"),
@@ -233,9 +236,12 @@ server <- function(input, output) {
           scale_colour_manual(name = "Legend", values=c(setNames(c("#2171b5", "#cb181d"), c(y1_plot2_name(), y2_plot2_name())))) +
           coord_cartesian(xlim = c(0, 100), ylim = c(-5, 100), expand = FALSE) + 
           labs(title = "\n\nDistribution by Tax Unit Decile", caption = "\n\n\nData: U.S. Department of the Treasury, Office of Tax Analysis - Distributional Analysis of the U.S. Tax System\nhttps://home.treasury.gov/policy-issues/tax-policy/office-of-tax-analysis") +
-          scale_x_continuous(name = "Tax Unit Deciles", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("", "10th", "20th", "30th", "40th", "50th", "60th",
-                                                                                                                           "70th", "80th", "90th", "100th")) +
-          scale_y_continuous(name = "Percent Share", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%")) + 
+          scale_x_continuous(name = "Tax Unit Deciles", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("", "10th", "20th", "30th", 
+                                                                                                                           "40th", "50th", "60th", "70th", 
+                                                                                                                           "80th", "90th", "100th")) +
+          scale_y_continuous(name = "Percent Share", breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100), labels = c("0%", "10%", "20%", "30%", "40%", 
+                                                                                                                        "50%", "60%", "70%", "80%", "90%", 
+                                                                                                                        "100%")) + 
           theme(
             panel.background = element_rect(fill = "white"),
             panel.border = element_rect(fill = NA, color = "black"),
