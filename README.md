@@ -3,7 +3,7 @@ tax-distributions contains the U.S. federal tax burden distribution information 
 
 The intent is to allow the user to examine the progressivity and regressivity of different components of the U.S. federal tax system.
 
-The app can be generated locally by downloading the necessary .xlsx files and using the script on your desktop. Additionally, the app can be found here:
+The app can be generated locally by downloading the necessary .xlsx files and using the script on your desktop. Additionally, the app can be found here: https://jhancuch.shinyapps.io/tax-distribution/
 
 
 # Issues & Contribute
